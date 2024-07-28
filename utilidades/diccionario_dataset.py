@@ -153,8 +153,11 @@ def atajos(accion):
     if accion == "ver":
         print("Estos son los terminos usandos en el data set")
 
-        for i in atajo:
-            print(i)
+        resultado = [f'"{a}" ---> "{d}"' for a, d in zip(atajo, descripcion)]
+
+        for r in resultado:
+            print(r)
+
 
 
 atajos("ver")
