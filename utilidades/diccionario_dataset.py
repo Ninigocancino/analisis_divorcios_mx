@@ -161,3 +161,4 @@ def atajos(accion):
 
 
 atajos("ver")
+
