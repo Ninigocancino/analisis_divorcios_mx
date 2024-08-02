@@ -157,10 +157,11 @@ def atajos(accion):
 
         for r in resultado:
             print(r)
+    
+    atajos("ver")
 
 
-
-atajos("ver")
+#atajos("ver")
 
 
 def info_features(a):
