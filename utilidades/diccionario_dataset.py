@@ -208,9 +208,9 @@ def info_features(a):
 
         "mes_eje" : "Contiene el mes en el cual se efectua la ejecutoria de la demanda de divorcio de la siguiente manera: \n\n clave, descripción \n 1, Enero \n 2, Febrero \n 3, Marzo \n 4, Abril \n 5, Mayo \n 6, Junio \n 7, Julio \n 8, Agosto \n 9, Septiembre \n 10, Octubre \n 11, Noviembre \n 12, Diciembre \n99, No especificado",
 
-        "anio_eje" : "Contiene el año en el cuál se realizó la ejecutoria de divorcio. \n\n Se asignan valores desde 1950 hasta el año de recolección de cada conjunto de datos.",
+        "anio_eje" : "Contiene el año en el cuál se realizó la ejecutoria de divorcio. \n \n Se asignan valores desde 1950 hasta el año de recolección de cada conjunto de datos.",
 
-        "ini_juic" : "Indica cuál de los conyuges inicia el proceso de divorcio. \n\n clave,   descripcion \n 1, Divorciante 1 \n 2, Divorciante 2 \n 3, Ambos \n 9, No especificado",
+        "ini_juic" : "Indica cuál de los conyuges inicia el proceso de divorcio. \n \nclave,   descripcion\n 1, Divorciante 1\n 2, Divorciante 2\n 3, Ambos\n 9, No especificado",
 
         "favor" : "Indica a favor de quién se resolvio la demanda:\n\n clave, descripcion \n 1, Divorciante 1 \n 2, Divorciante 2 \n 3, Ambos \n 9, No especificado",
 
@@ -292,7 +292,7 @@ def info_features(a):
 
         "edad_mdiv2" : "Edad al matrimonio del segundo divorciante.\n\n Se asignan valores numéricos del 0 al 95 para designar la edad y se asigna \nel valor 999 para 'No especificado'",
 
-        "t_dvante" : "Tipo de divorciante.\n\n clave,descripción \n1,Divorciantes hombre - mujer \n2,Divorciantes del mismo sexo hombres \n 3,Divorciantes del mismo sexo mujeres",
+        "t_dvante" : "Tipo de divorciante. \n\n clave,descripción \n 1,Divorciantes hombre - mujer \n 2,Divorciantes del mismo sexo hombres \n 3,Divorciantes del mismo sexo mujeres",
 
         "dis_reoax" : "Distrito de registro de Oaxaca"
 
@@ -305,4 +305,4 @@ def info_features(a):
         print(f"La clave '{a}' no se encuentra registrada")
 
     
-    print(info_features())
+    info_features()
