@@ -1,6 +1,6 @@
 
 def atajos(accion):
-    #función que retorna los shortcuts para acceder a la definición de la nomenclatura
+    # Función que retorna los shortcuts para acceder a la definición de la nomenclatura
 
     atajo = [
         "tipo_divorcio",
@@ -13,7 +13,6 @@ def atajos(accion):
         "local_mat",
         "tloc_mat",
         "dia_mat",
-        
         "mes_mat",
         "anio_mat",
         "dia_reg",
@@ -24,7 +23,6 @@ def atajos(accion):
         "anio_sen",
         "dia_eje",  
         "mes_eje",
-
         "anio_eje",
         "ini_juic",
         "favor",
@@ -35,7 +33,6 @@ def atajos(accion):
         "cus_hij",
         "pat_pot",
         "pat_hij",
-
         "pension",
         "pen_hij",
         "naci_div1",
@@ -46,7 +43,6 @@ def atajos(accion):
         "mun_rhdiv1",
         "loc_rhdiv1",
         "tloc_div1",
-        
         "escol_div1",
         "con_acdiv1",
         "dedic_div1",
@@ -57,7 +53,6 @@ def atajos(accion):
         "nacim_div2",
         "eciv_adiv2",
         "ent_rhdiv2",
-        
         "mun_rhdiv2",
         "loc_rhdiv2",
         "tloc_div2",
@@ -68,17 +63,16 @@ def atajos(accion):
         "sexo_div2",
         "dura_soc",
         "dura_leg",
-
         "edad_mdiv1",
         "edad_mdiv2",
         "t_dvante",
         "dis_reoax"
-        ]
+    ]
 
     descripcion = [
         "Tipo de divorcios comtemplados en México",
-        "Entidad donde se inicio el tramite de divorcio"
-        "Municipio o alacaldía de registro",
+        "Entidad donde se inició el trámite de divorcio",
+        "Municipio o alcaldía de registro",
         "Localidad de registro",
         "Tamaño de localidad de registro",
         "Entidad de registro del matrimonio",
@@ -86,7 +80,6 @@ def atajos(accion):
         "Localidad de registro del matrimonio",
         "Tamaño de localidad de registro del matrimonio",
         "Día de registro del matrimonio",
-
         "Mes de registro del matrimonio",
         "Año de registro del matrimonio",
         "Día de registro de la demanda",
@@ -97,10 +90,8 @@ def atajos(accion):
         "Año de la sentencia",
         "Día de ejecutoria del divorcio",
         "Mes de ejecutoria del divorcio",
-
-
         "Año de ejecutoria del divorcio",
-        "Persona que inicio el juicio",
+        "Persona que inició el juicio",
         "A favor de quien se resolvió el juicio",
         "Causas de divorcio",
         "Número de hijos en el matrimonio",
@@ -109,7 +100,6 @@ def atajos(accion):
         "Número de hijos en custodia",
         "Persona a quien se le asigna la patria potestad",
         "Número de hijos en patria potestad",
-        
         "Personas a quien se le asigna la pensión alimenticia",
         "Número de hijos a quienes se les asigna la pensión alimenticia",
         "Nacionalidad del primer divorciante",
@@ -120,7 +110,6 @@ def atajos(accion):
         "Municipio o alcaldía de residencia habitual del primer divorciante",
         "Localidad de residencia habitual del primer divorciante",
         "Tamaño de localidad de residencia habitual del primer divorciante",
-        
         "Nivel de escolaridad del primer divorciante (escolaridad)",
         "Condición de actividad económica del primer divorciante",
         "A qué se dedica el primer divorciante",
@@ -131,7 +120,6 @@ def atajos(accion):
         "Año de nacimiento del segundo divorciante",
         "Estado conyugal (civil) anterior del segundo divorciante",
         "Entidad de residencia habitual del segundo divorciante",
-
         "Municipio o alcaldía de residencia habitual del segundo divorciante",
         "Localidad de residencia habitual del segundo divorciante",
         "Tamaño de localidad de residencia habitual del segundo divorciante",
@@ -142,8 +130,6 @@ def atajos(accion):
         "Sexo del segundo divorciante",
         "Duración social del matrimonio",
         "Duración legal del matrimonio",
-
-
         "Edad al matrimonio del primer divorciante",
         "Edad al matrimonio del segundo divorciante",
         "Tipo de divorciante",
@@ -151,17 +137,16 @@ def atajos(accion):
     ]
 
     if accion == "ver":
-        print("Estos son los terminos usandos en el data set")
+        print("Estos son los términos usados en el dataset")
 
         resultado = [f'"{a}" ---> "{d}"' for a, d in zip(atajo, descripcion)]
 
         for r in resultado:
             print(r)
-    
-    atajos("ver")
 
+# Llamada a la función sin recursión infinita
+atajos("ver")
 
-#atajos("ver")
 
 
 def info_features(a):
